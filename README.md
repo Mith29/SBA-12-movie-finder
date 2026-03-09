@@ -1,6 +1,6 @@
-# Movie Finder API
+## Movie Finder API
 
-## Overview
+### Overview
 
 The **Movie Finder API** is a backend service built with **Node.js and Express** that retrieves movie data from the **OMDb (Open Movie Database) API**.
 
@@ -10,7 +10,7 @@ The API follows **RESTful principles**, uses **Axios for external requests**, an
 
 ---
 
-# Features
+### Features
 
 * Search movies by title
 * Retrieve detailed movie information by IMDb ID
@@ -22,7 +22,7 @@ The API follows **RESTful principles**, uses **Axios for external requests**, an
 
 ---
 
-# Technologies Used
+### Technologies Used
 
 * Node.js
 * Express.js
@@ -31,7 +31,7 @@ The API follows **RESTful principles**, uses **Axios for external requests**, an
 
 ---
 
-# Project Structure
+### Project Structure
 
 ```
 movie-finder-api
@@ -50,7 +50,7 @@ movie-finder-api
 
 ---
 
-# Installation
+### Installation
 
 ### 1. Clone the repository
 
@@ -72,7 +72,7 @@ npm install
 
 ---
 
-# Environment Variables
+### Environment Variables
 
 Create a `.env` file in the root directory and add your OMDb API key:
 
@@ -86,12 +86,12 @@ http://www.omdbapi.com/apikey.aspx
 
 ---
 
-# Running the Server
+### Running the Server
 
 Start the server with:
 
 ```
-node server.js
+npm run dev
 ```
 
 The server will run on:
@@ -104,7 +104,7 @@ http://localhost:3001
 
 # API Endpoints
 
-## 1. Search Movies
+### 1. Search Movies
 
 Search movies by title.
 
@@ -147,7 +147,7 @@ http://localhost:3001/api/search?title=batman
 
 ---
 
-# 2. Get Movie Details
+### 2. Get Movie Details
 
 Retrieve detailed information for a specific movie using its **IMDb ID**.
 
@@ -177,7 +177,7 @@ http://localhost:3001/api/movies/tt0372784
 
 ---
 
-# Error Handling
+## Error Handling
 
 The API includes error handling for:
 
@@ -202,56 +202,3 @@ If the request fails due to connectivity issues:
 ```
 
 ---
-
-# Axios Interceptors
-
-The API uses Axios interceptors to log requests and responses.
-
-### Request Interceptor
-
-Logs outgoing API requests.
-
-```
-Requesting: GET /?s=batman
-```
-
-### Response Interceptor
-
-Logs successful responses or errors when fetching movie data.
-
----
-
-# RESTful Principles Used
-
-This API follows key REST principles:
-
-### Client–Server Architecture
-
-The backend API is independent from the client application.
-
-### Statelessness
-
-Each request contains all the required information. The server does not store client session state.
-
-### Resource-Based URLs
-
-Endpoints represent resources rather than actions.
-
-Examples:
-
-```
-/api/search
-/api/movies/:id
-```
-
-### Standard HTTP Methods
-
-This API uses the **GET** method to retrieve data.
-
----
-
-# Author
-
-Junior Backend Developer Project
-
-Movie Finder API – Backend Assessment
