@@ -102,7 +102,7 @@ http://localhost:3001
 
 ---
 
-# API Endpoints
+### API Endpoints
 
 ### 1. Search Movies
 
